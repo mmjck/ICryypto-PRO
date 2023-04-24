@@ -45,9 +45,27 @@ class CoinCell: UITableViewCell {
     
     public func configure(with coin: Coin){
         self.coin = coin
+        DispatchQueue.global().async { [weak self] in
+                    if let logoURL = coin.logoURL,
+                       let imageData = try? Data(contentsOf: logoURL),
+                       let logoImage = UIImage(data: imageData) {
+
+                        DispatchQueue.main.async {
+                            self?.coinLogo.image = logoImage
+                        }
+                    }
+        }
         self.coinName.text = coin.name
         
     }
+    
+    
+    // TODO: - PrepareForReuse
+      override func prepareForReuse() {
+          super.prepareForReuse()
+          self.coinName.text = nil
+          self.coinLogo.image = nil
+      }
     
     private func setupUI(){
         self.addSubview(coinLogo)

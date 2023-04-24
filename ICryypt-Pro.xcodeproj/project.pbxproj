@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0D22089829F6C43500B545BE /* HTTP.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D22089729F6C43500B545BE /* HTTP.swift */; };
+		0D22089A29F6C46E00B545BE /* Endpoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D22089929F6C46E00B545BE /* Endpoints.swift */; };
+		0D22089C29F6C48800B545BE /* CoinService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D22089B29F6C48800B545BE /* CoinService.swift */; };
+		0D22089E29F6C4AE00B545BE /* HomeControllerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D22089D29F6C4AE00B545BE /* HomeControllerViewModel.swift */; };
 		0D28A0FE29EB207F00EC9420 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D28A0FD29EB207F00EC9420 /* AppDelegate.swift */; };
 		0D28A10029EB207F00EC9420 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D28A0FF29EB207F00EC9420 /* SceneDelegate.swift */; };
 		0D28A10229EB207F00EC9420 /* HomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D28A10129EB207F00EC9420 /* HomeController.swift */; };
@@ -18,9 +22,14 @@
 		0D28A11E29EB2C8F00EC9420 /* ViewCryptoControllerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D28A11D29EB2C8E00EC9420 /* ViewCryptoControllerViewController.swift */; };
 		0D28A12029EB315C00EC9420 /* ViewCryptoControllerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D28A11F29EB315C00EC9420 /* ViewCryptoControllerViewModel.swift */; };
 		0D28A12229EB6B5E00EC9420 /* CoinError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D28A12129EB6B5E00EC9420 /* CoinError.swift */; };
+		6E603A20252D5B17A1FC802A /* Pods_ICryypt_Pro.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 618347C8262B48C38B67EB1A /* Pods_ICryypt_Pro.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0D22089729F6C43500B545BE /* HTTP.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTP.swift; sourceTree = "<group>"; };
+		0D22089929F6C46E00B545BE /* Endpoints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoints.swift; sourceTree = "<group>"; };
+		0D22089B29F6C48800B545BE /* CoinService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinService.swift; sourceTree = "<group>"; };
+		0D22089D29F6C4AE00B545BE /* HomeControllerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeControllerViewModel.swift; sourceTree = "<group>"; };
 		0D28A0FA29EB207F00EC9420 /* ICryypt-Pro.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ICryypt-Pro.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0D28A0FD29EB207F00EC9420 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0D28A0FF29EB207F00EC9420 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -34,6 +43,9 @@
 		0D28A11D29EB2C8E00EC9420 /* ViewCryptoControllerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewCryptoControllerViewController.swift; sourceTree = "<group>"; };
 		0D28A11F29EB315C00EC9420 /* ViewCryptoControllerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewCryptoControllerViewModel.swift; sourceTree = "<group>"; };
 		0D28A12129EB6B5E00EC9420 /* CoinError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinError.swift; sourceTree = "<group>"; };
+		61793E6BFE88BA60E20F260A /* Pods-ICryypt-Pro.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ICryypt-Pro.debug.xcconfig"; path = "Target Support Files/Pods-ICryypt-Pro/Pods-ICryypt-Pro.debug.xcconfig"; sourceTree = "<group>"; };
+		618347C8262B48C38B67EB1A /* Pods_ICryypt_Pro.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ICryypt_Pro.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A6576ACB807E9936E8346AE5 /* Pods-ICryypt-Pro.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ICryypt-Pro.release.xcconfig"; path = "Target Support Files/Pods-ICryypt-Pro/Pods-ICryypt-Pro.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,17 +53,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6E603A20252D5B17A1FC802A /* Pods_ICryypt_Pro.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		07885A61E17E6DD15466E640 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				618347C8262B48C38B67EB1A /* Pods_ICryypt_Pro.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		0D28A0F129EB207F00EC9420 = {
 			isa = PBXGroup;
 			children = (
 				0D28A0FC29EB207F00EC9420 /* ICryypt-Pro */,
 				0D28A0FB29EB207F00EC9420 /* Products */,
+				925DBCA05A942C0E0B5916F4 /* Pods */,
+				07885A61E17E6DD15466E640 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -80,6 +103,9 @@
 		0D28A11129EB21F100EC9420 /* API */ = {
 			isa = PBXGroup;
 			children = (
+				0D22089729F6C43500B545BE /* HTTP.swift */,
+				0D22089929F6C46E00B545BE /* Endpoints.swift */,
+				0D22089B29F6C48800B545BE /* CoinService.swift */,
 			);
 			path = API;
 			sourceTree = "<group>";
@@ -114,6 +140,7 @@
 			isa = PBXGroup;
 			children = (
 				0D28A11F29EB315C00EC9420 /* ViewCryptoControllerViewModel.swift */,
+				0D22089D29F6C4AE00B545BE /* HomeControllerViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -130,6 +157,15 @@
 			path = Supporting;
 			sourceTree = "<group>";
 		};
+		925DBCA05A942C0E0B5916F4 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				61793E6BFE88BA60E20F260A /* Pods-ICryypt-Pro.debug.xcconfig */,
+				A6576ACB807E9936E8346AE5 /* Pods-ICryypt-Pro.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -137,9 +173,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0D28A10E29EB208100EC9420 /* Build configuration list for PBXNativeTarget "ICryypt-Pro" */;
 			buildPhases = (
+				C5C14A0CFB765EF710FA2E7F /* [CP] Check Pods Manifest.lock */,
 				0D28A0F629EB207F00EC9420 /* Sources */,
 				0D28A0F729EB207F00EC9420 /* Frameworks */,
 				0D28A0F829EB207F00EC9420 /* Resources */,
+				E91E57554732A95AF42524F9 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -195,6 +233,48 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		C5C14A0CFB765EF710FA2E7F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ICryypt-Pro-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E91E57554732A95AF42524F9 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ICryypt-Pro/Pods-ICryypt-Pro-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ICryypt-Pro/Pods-ICryypt-Pro-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ICryypt-Pro/Pods-ICryypt-Pro-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		0D28A0F629EB207F00EC9420 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -205,10 +285,14 @@
 				0D28A12029EB315C00EC9420 /* ViewCryptoControllerViewModel.swift in Sources */,
 				0D28A11E29EB2C8F00EC9420 /* ViewCryptoControllerViewController.swift in Sources */,
 				0D28A10029EB207F00EC9420 /* SceneDelegate.swift in Sources */,
+				0D22089829F6C43500B545BE /* HTTP.swift in Sources */,
 				0D28A12229EB6B5E00EC9420 /* CoinError.swift in Sources */,
 				0D28A11A29EB23C100EC9420 /* Coin.swift in Sources */,
+				0D22089E29F6C4AE00B545BE /* HomeControllerViewModel.swift in Sources */,
 				0D28A11C29EB246B00EC9420 /* CoinCell.swift in Sources */,
 				0D28A11829EB229200EC9420 /* Constants.swift in Sources */,
+				0D22089C29F6C48800B545BE /* CoinService.swift in Sources */,
+				0D22089A29F6C46E00B545BE /* Endpoints.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -276,7 +360,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -330,7 +414,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -342,6 +426,7 @@
 		};
 		0D28A10F29EB208100EC9420 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 61793E6BFE88BA60E20F260A /* Pods-ICryypt-Pro.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -354,7 +439,7 @@
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -370,6 +455,7 @@
 		};
 		0D28A11029EB208100EC9420 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A6576ACB807E9936E8346AE5 /* Pods-ICryypt-Pro.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -382,7 +468,7 @@
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

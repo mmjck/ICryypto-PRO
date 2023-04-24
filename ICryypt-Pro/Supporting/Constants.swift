@@ -15,7 +15,7 @@ struct Constants {
     
     
     static let fullURL = "https://pro.coinmarketcap.com/"
-    static let baseURL = "pro.coinmarketcap.com"
+    static let baseURL = "pro-api.coinmarketcap.com"
     static let port: Int? = nil
     
 }

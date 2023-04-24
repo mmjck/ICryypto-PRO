@@ -1,0 +1,6 @@
+framework module Pods_ICryypt_Pro {
+  umbrella header "Pods-ICryypt-Pro-umbrella.h"
+
+  export *
+  module * { export * }
+}

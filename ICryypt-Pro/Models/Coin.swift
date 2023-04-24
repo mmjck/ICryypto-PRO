@@ -11,12 +11,11 @@ struct CoinArray: Decodable {
     let data: [Coin]
 }
 struct Coin: Decodable {
-    
     let id: Int
     let name: String
     let maxSupply: Int?
     let rank: Int
-    let pricingData: PricingData
+     let pricingData: PricingData
     
     
     var logoURL: URL? {
@@ -33,7 +32,7 @@ struct Coin: Decodable {
 
 
 struct PricingData: Decodable {
-    let CAD: CAD
+    let USD: CAD
 }
 
 struct CAD: Decodable {

@@ -35,11 +35,11 @@ class ViewCryptoControllerViewModel {
     }
     
     var priveLabel: String {
-        return "Rank: \(self.coin.pricingData.CAD.price) CAD"
+        return "Price: \(self.coin.pricingData.USD.price) CAD"
     }
     
     var marketCapLabel: String {
-        return "Rank: \(self.coin.pricingData.CAD.market_cap)"
+        return "Market Cap: $\(self.coin.pricingData.USD.market_cap)"
     }
     
     var maxSupplyLabel: String {
