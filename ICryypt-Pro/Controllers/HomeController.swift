@@ -9,7 +9,7 @@ import UIKit
 
 class HomeController: UIViewController {
     
-    // private let coins: [Coin] = []
+    private lazy var searchController = UISearchController(searchResultsController: nil)
     private let viewModel: HomeControllerViewModel
 
     private lazy var tableView: UITableView = {
@@ -33,7 +33,7 @@ class HomeController: UIViewController {
         super.viewDidLoad()
         
         self.setupUI()
-        
+        self.setupSearchController()
         
         self.tableView.delegate = self
         self.tableView.dataSource = self
@@ -89,8 +89,41 @@ class HomeController: UIViewController {
                     self.tableView.trailingAnchor.constraint(equalTo: self.view.trailingAnchor),
         ])
     }
+    
+    
+    private func setupSearchController(){
+        self.searchController.searchResultsUpdater = self
+        self.searchController.obscuresBackgroundDuringPresentation = false
+        self.searchController.hidesNavigationBarDuringPresentation = false
+        self.searchController.searchBar.placeholder = "Search cryptos"
+        
+        self.navigationItem.searchController = searchController
+        self.definesPresentationContext = false
+        self.navigationItem.hidesSearchBarWhenScrolling = false
+        
+        self.searchController.searchBar.delegate = self
+        self.searchController.searchBar.showsBookmarkButton = true
+        
+        
+        self.searchController.searchBar.setImage(UIImage(systemName: "questionmark"), for: .bookmark, state: .normal)
+    }
 }
 
+extension HomeController: UISearchResultsUpdating, UISearchBarDelegate{
+    func updateSearchResults(for searchController: UISearchController) {
+        self.viewModel.inSearchMode(searchController)
+        self.viewModel.updatSearchController(searchBarText: searchController.searchBar.text)
+    }
+    
+    func searchBarCancelButtonClicked(_ searchBar: UISearchBar) {
+        self.viewModel.inSearchMode(searchController)
+
+    }
+    func searchBarBookmarkButtonClicked(_ searchBar: UISearchBar) {
+        
+    }
+
+}
 
 extension HomeController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -101,7 +134,9 @@ extension HomeController: UITableViewDelegate, UITableViewDataSource {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: CoinCell.identifier, for: indexPath) as? CoinCell else {
             fatalError("unable to dequeue coiun cell in home controller")
         }
+      
         let coin = self.viewModel.coins[indexPath.row]
+        
         cell.configure(with: coin)
         return cell
     }
@@ -114,6 +149,7 @@ extension HomeController: UITableViewDelegate, UITableViewDataSource {
         self.tableView.deselectRow(at: indexPath, animated: true)
         
         let coin = self.viewModel.coins[indexPath.row]
+
         let vm = ViewCryptoControllerViewModel(coin: coin)
         let vc = ViewCryptoControllerViewController(vm)
         self.navigationController?.pushViewController(vc, animated: true)

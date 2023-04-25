@@ -6,7 +6,7 @@
 //
 
 import UIKit
-
+import SDWebImage
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
     var window: UIWindow?
@@ -20,6 +20,8 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         
         self.window = window
         self.window?.makeKeyAndVisible()
+        
+        SDImageCache.shared.config.maxDiskAge = 100000 * 200
     }
 }
 

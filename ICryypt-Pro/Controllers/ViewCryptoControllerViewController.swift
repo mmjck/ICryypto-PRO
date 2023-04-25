@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import SDWebImage
 
 class ViewCryptoControllerViewController: UIViewController {
     
@@ -109,7 +110,8 @@ class ViewCryptoControllerViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        self.view.backgroundColor = .systemBackground
+
         self.setupHeader()
         self.setupUI()
         
@@ -118,16 +120,9 @@ class ViewCryptoControllerViewController: UIViewController {
         self.priceLabel.text = self.viewModel.priveLabel
         self.marketLabel.text = self.viewModel.marketCapLabel
         self.maxSupplyLabel.text = self.viewModel.maxSupplyLabel
+        
+        self.coinLogo.sd_setImage(with: self.viewModel.coin.logoURL)
     
-        
-        self.viewModel.onImageLoaded = { [weak self] logoImage in
-            DispatchQueue.main.async {
-                self?.coinLogo.image = logoImage
-            }
-        }
-        
-        
-        
     }
     
     
