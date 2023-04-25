@@ -1,7 +1,13 @@
 # ICryypto-PRO
 
+## Playlist
+[Youtube](https://www.youtube.com/watch?v=bgznym00FyY&list=PLWOgAHhZbsIEh3dgGno4CPPsVcb4QUFy7&index=1)
 
-<img height="600px" src="https://user-images.githubusercontent.com/55866244/234022127-bdb2e9da-acaf-498e-b72f-4462a5bdc644.png"/>
+
+## Project images
+<img height="600px" src="https://user-images.githubusercontent.com/55866244/234171069-2df95319-1a08-4638-8f38-8fea623e629d.png"/>
 
 
-<img height="600px" src="https://user-images.githubusercontent.com/55866244/234022152-524982e6-d1e5-4319-90ad-f408a7f9a501.png"/>
+<img height="600px" src="https://user-images.githubusercontent.com/55866244/234171292-4c89958d-2ffe-4e28-a78d-829b4dbfed45.png"/>
+
+
